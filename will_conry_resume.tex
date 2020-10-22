@@ -1,0 +1,188 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj (template), Will Conry (data)
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://conry.ca/}{\Large William Conry}} & Email : \href{mailto:will@conry.ca}{will@conry.ca}\\
+  \href{http://conry.ca/}{http://www.conry.ca} & Mobile : 289-400-5732 \\
+\end{tabular*}
+
+\vfill
+
+\section{\textbf{Objective}}
+    I'm a recent graduate from McMaster University's Software Engineering program and I'm currently seeking employment. I'm particularly interested in machine learning and data science, as well as web and mobile application development. Before attending university I pursued mechanical technology in college from which I retain technical skills as well as professional experience. I enjoy running, cooking, and reading things on the web.
+
+\vfill
+
+%-----------EDUCATION-----------------
+\section{\textbf{Education}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {McMaster University}{Hamilton, On}
+      {Bachelor of Engineering in Software Engineering (Embedded Systems)}{Graduated April 2020}
+    \resumeSubheading
+      {Mohawk College}{Hamilton, On}
+      {Ontario College Advanced Diploma in Mechanical Engineering Technology}{Graduated April 2015}
+    % \resumeSubheading
+    % 	{T.A. Blakelock}{Oakville, On}
+    % 	{Ontario Secondary School Diploma, Graduated with Honors}{Graduated 2010}
+  \resumeSubHeadingListEnd
+  
+\vfill
+
+%-----------PROJECTS-----------------
+\section{\textbf{Software Projects}}
+ \resumeSubHeadingListStart
+    \resumeSubItem{\href{https://github.com/oliviatinios/grocery-assistant}{Grocery Assistant}}
+    {An Android application that assists visually impaired people with grocery shopping using indoor navigation and voice communication. Indoor positioning is achieved using trilateration with distances approximated from the signal strength of Bluetooth beacons. Navigation uses Navigine's API. The voice interface uses AWS Lex. Also has a shopping list feature that stores the name and location of grocery items using AWS DynamoDB and AWS Lambda}
+    
+        
+    \resumeSubItem{\href{https://github.com/willconry/conry.ca}{Personal Website}}
+    {A simple website that provides information about me and showcases my projects. It is operational but still under development, it currently uses HTML5, CSS and AWS EC2. I am currently learning web technologies and am planning on updating it to a more dynamic version that uses React and Javascript, as well as more AWS services.
+    
+    }
+    % \resumeSubItem{Github Visualization}
+    %  {Data Visualization of Git Log data using D3 to analyze project trends over time.}
+    % \resumeSubItem{Recommendation System}
+    %  {Music and Movie recommender systems using collaborative filtering on public datasets.}
+    % \resumeSubItem{Mac Setup}
+    %  {Book that gives step by step instructions on setting up developer environment on Mac OS.}
+ \resumeSubHeadingListEnd
+  
+\vfill
+
+%--------PROGRAMMING SKILLS------------
+\section{\textbf{Programming Skills}}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Languages}{: Python, Java, C, MATLAB}
+      \hfill
+      \textbf{Technologies}{: Git, AWS, LaTeX} % LEARN TECHNOLOGIES TO ADD HERE
+    }
+  \resumeSubHeadingListEnd
+
+\vfill
+
+%-----------EXPERIENCE-----------------
+\section{\textbf{Work Experience}}
+  \resumeSubHeadingListStart
+  
+      \resumeSubheading
+ 		 {Carmeuse}{Dundas, ON}
+ 		 {Technician}{May 2015 - August 2015}
+ 		 \resumeItemListStart
+ 		 	\resumeItem{SAP ERP}
+ 		 		{Used SAP enterprise resource planning software to retrieve information for projects as well as purchasing. Cleaned up inventory database and maintenance schedule by removing redundant and obsolete items.}
+ 	  	 	\resumeItem{Machine Part Master List}
+ 	  	 		{Created a catalog of all parts on every machine at the plant. Used by maintenance as well as purchasing. Part of a larger project to reduce inventory by using common parts.}
+ 			\resumeItem{Inventory Catalog}
+ 	  	 		{Identified and labeled parts in storage, entered correct quantities into resource planning software. Identified obsolete parts that can be sold or scrapped.}
+ 	  	 \resumeItemListEnd
+
+    \resumeSubheading
+      {Carmeuse}{Dundas, ON}
+      {Co-op Student Work Placement}{May 2014 - August 2014}
+      \resumeItemListStart
+        \resumeItem{Preventative Maintenance Schedule}
+          {Optimized preventative maintenance schedule to minimize the variance in required man hours per week. This increased productivity of maintenance staff as well as reduced money spent on third party contractors.}
+        \resumeItem{Update MSDSs for WHMIS}
+          {Retrieve and replace outdated material safety data sheets for hazardous products carried at the plant. Required contacting suppliers that were reluctant to publish the data sheets.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+        {Orlick Industries}{Stoney Creek, ON}
+     	{Co-op Student Work Placement}{May 2013 - August 2013}
+      
+%      \resumeSubheading
+%      	{Ministry of Community Safety and Correctional Services}{Toronto, ON}
+%      	{Mimico Correctional Center; Decommissioning team member}{May 2012 - August 2012}
+      
+% 	\resumeSubheading
+%     	{Town of Oakville}{Oakville, ON}
+%   		{Life Guard/Swim Instructor}{September 2008 - May 2010}
+
+
+  \resumeSubHeadingListEnd
+
+\vfill
+
+\section{\textbf{References}}
+	\resumeSubHeadingListStart
+		\item{
+		References are available upon request.
+		}
+	\resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
